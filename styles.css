@@ -1,0 +1,222 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(images/pattern-background-desktop.svg) hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    font-family: "Red Hat Display", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+footer{
+    margin: 1rem auto;
+}
+
+/* CARD DESIGN*/
+
+.card{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+    overflow: hidden;
+    max-width: 27.5rem;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+.img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.body{
+    text-align: center;
+}
+
+.title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 800;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.text{
+    color: hsl(224, 23%, 55%);
+    line-height: 1.6;
+    font-weight: 500;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-bottom: 1rem;
+}
+
+.payment-info{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 2.9em 1em 2.9em;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.left-box{
+    display: flex;
+}
+
+.music{
+    margin-right: 0.9em;
+}
+
+.annual{
+    color:hsl(223, 47%, 23%);
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 0.17rem;
+}
+
+.price{
+    color:hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.right-box{
+    padding: 0 0;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+}
+
+/* BUTTON DESIGN*/
+
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 0.65rem;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+.pay{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+    opacity: 1;
+    width: 79%;
+    padding: 1rem 1.7rem 1rem 1.7rem;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.cancel{
+    border: none;
+    background-color: white;
+    margin-top: 1.7em;
+    font-size: 13px;
+    font-weight: 800;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 1.5rem;
+}
+
+/* ACTIVE STATE */
+
+.right-box:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pay:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 375px){
+    body{
+        background: url(images/pattern-background-mobile.svg) hsl(225, 100%, 94%);
+        background-repeat: no-repeat;
+    }
+
+    .card{
+        width: 24rem;
+        max-width: 100%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .title{
+        margin: 1.9rem auto;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .text{
+        margin-top: 1rem;
+        padding: 0 2rem 0 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .payment-info{
+        width: 80%;
+        margin: 0.5em 0 0.5em 2.5em;
+    }
+
+    .annual{
+        font-size: .95rem;
+        font-weight: 800;
+    }
+
+    .price{
+        font-size: .9rem;
+    }
+
+    .music{
+        padding: 0 0.5rem 0 0;
+    }
+
+    .pay{
+        width: 80%;
+    }
+
+    .cancel{
+        margin-bottom: 0.7rem;
+    }
+
+    .music{
+        width: 40%;
+        height: 90%;
+        margin-right: 0.1rem;
+    }
+}
